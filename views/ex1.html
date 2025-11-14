@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Exercise 1 — Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <p><a href="/">Link to Start Page</a></p>
+      <h1>Ansh's Sample Form</h1>
+      <form action="/submit" method="post" class="card" id="contactForm">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" required />
+
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" required />
+
+        <label>Payment Type:</label>
+        <div>
+          <input type="radio" id="paymentCash" name="payment" value="Cash" />
+          <label for="paymentCash">Cash</label>
+        </div>
+        <div>
+          <input type="radio" id="paymentCredit" name="payment" value="Credit Card" />
+          <label for="paymentCredit">Credit Card</label>
+        </div>
+        <div>
+          <input type="radio" id="paymentGoogle" name="payment" value="Google Pay" />
+          <label for="paymentGoogle">Google Pay</label>
+        </div>
+        <div>
+          <input type="radio" id="paymentApple" name="payment" value="Apple Pay" />
+          <label for="paymentApple">Apple Pay</label>
+        </div>
+
+        <div style="margin-top: 8px;">
+          <input type="checkbox" id="promotions" name="promotions" value="yes" />
+          <label for="promotions">Sign me up for special promotions</label>
+        </div>
+
+        <label for="location" style="margin-top: 8px;">Preferred Location:</label>
+        <select id="location" name="location">
+          <option>Orange County</option>
+          <option>Los Angeles County</option>
+          <option>San Diego County</option>
+        </select>
+
+        <button type="submit">Submit</button>
+        <button type="reset">Cancel</button>
+      </form>
+      <p><a href="/">Back</a></p>
+    </div>
+  </body>
+</html>
+
+
