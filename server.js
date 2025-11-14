@@ -52,7 +52,7 @@ app.post('/submit', (req, res) => {
   <body>
     <div class="container">
       <p><a href="/">Link to Start Page</a></p>
-      <h1>Asher's Sample Form</h1>
+      <h1>Ansh's Sample Form</h1>
       <form action="/submit" method="post" class="card" id="contactForm">
         <label for="name">Name:</label>
         <input id="name" name="name" type="text" value="${escapeHtml(safeName)}" required />
@@ -137,6 +137,7 @@ app.post('/articles', (req, res) => {
   return res.send(`<!doctype html>
 <html lang="en">
   <head>
+  
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/css/style.css">
@@ -145,7 +146,7 @@ app.post('/articles', (req, res) => {
   <body>
     <div class="container">
       <p><a href="/">Link to Start Page</a></p>
-      <h1>Asher's Articles/Form Solution</h1>
+      <h1>Ansh's Articles/Form Solution</h1>
       <h2>Add new article</h2>
       <p>New article added successfully with title "<strong>${escapeHtml(newArticle.title)}</strong>" and ID <strong>${newArticle.id}</strong>!</p>
       <p><a href="/ex3">Back</a></p>
